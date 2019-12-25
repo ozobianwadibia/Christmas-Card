@@ -5,7 +5,8 @@
 }
 body {
   font-family: Trebuchet MS, Montserrat, sans-serif;
-  background-image: url("./assets/images/red-and-green-mistletoe-decoration-695971.jpg");
+  background: rgb(207, 12, 42)
+    url("./assets/images/red-and-green-mistletoe-decoration-695971.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
