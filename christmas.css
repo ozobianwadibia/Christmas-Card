@@ -1,0 +1,116 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: Trebuchet MS, Montserrat, sans-serif;
+  background-image: url("./assets/images/red-and-green-mistletoe-decoration-695971.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*************************************************/
+
+.outer p {
+  font-family: "Mali", cursive;
+  color: black;
+  margin: auto;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.outer {
+  text-align: center;
+}
+
+.outer .sender,
+.outer .addressee {
+  display: inline-block;
+  background-color: silver;
+  border-radius: 0.5rem;
+  padding: 0.5em 0.8em 0.5em 0.8em;
+}
+
+/*************************************************/
+
+section {
+  font-family: "Emilys Candy", cursive;
+  position: relative;
+  text-align: center;
+  background-color: #ffcc00;
+  width: 27.5rem;
+  margin: auto;
+  max-width: 27.5rem;
+  padding: 1.5rem 2rem 8rem;
+  box-shadow: inset 0 0 0 4px white, 0px 10px 20px black;
+}
+
+h1 {
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 400;
+  text-shadow: 1px 1px 0 #acccc4, 2px 2px 0 #eeeeee;
+}
+p {
+  font-size: 2rem;
+  text-shadow: 1px 1px 0 #dddddd;
+  margin: 0;
+}
+.greetings {
+  color: #002917;
+}
+
+.good-message {
+  position: absolute;
+  background: #7b0103;
+  color: white;
+  bottom: 2rem;
+  left: -1.5rem;
+  right: -1.5rem;
+  padding: 1.2rem;
+  font-size: 1.05rem;
+}
+.good-message:before,
+.good-message:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.good-message:before {
+  border-width: 0 0 1rem 1.5rem;
+  border-color: transparent transparent black transparent;
+  top: -1rem;
+  left: 0;
+}
+.good-message:after {
+  border-width: 1rem 1.5rem 0 0;
+  border-color: black transparent transparent transparent;
+  bottom: -1rem;
+  right: 0;
+}
+.msg {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.5s;
+  display: block;
+}
+.msg:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 520px) {
+  section {
+    width: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
